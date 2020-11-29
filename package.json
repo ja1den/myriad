@@ -13,6 +13,7 @@
 	"license": "MIT",
 	"author": "Jaiden Douglas",
 	"scripts": {
+		"postinstall": "husky install",
 		"lint": "sort-package-json && prettier -wu \"*\" && eslint \"**/*.ts\" --fix",
 		"prod": "ts-node src/index.ts",
 		"start": "nodemon"
@@ -22,6 +23,7 @@
 		"@typescript-eslint/eslint-plugin": "^4.8.2",
 		"@typescript-eslint/parser": "^4.8.2",
 		"eslint": "^7.14.0",
+		"husky": "^5.0.4",
 		"nodemon": "^2.0.6",
 		"prettier": "^2.2.1",
 		"sort-package-json": "^1.48.0",
