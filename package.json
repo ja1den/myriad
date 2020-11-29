@@ -1,0 +1,19 @@
+{
+	"name": "node-template",
+	"version": "1.0.0",
+	"private": true,
+	"homepage": "https://github.com/ja1den/node-template#readme",
+	"bugs": {
+		"url": "https://github.com/ja1den/node-template/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ja1den/node-template.git"
+	},
+	"license": "MIT",
+	"author": "Jaiden Douglas",
+	"main": "src/index.ts",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	}
+}
