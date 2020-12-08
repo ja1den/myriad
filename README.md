@@ -1,40 +1,36 @@
-# Node Template
+# Myriad
 
-![License](https://img.shields.io/github/license/ja1den/node-template)
+![License](https://img.shields.io/github/license/ja1den/myriad)
 
-> A template for [Node.js](https://nodejs.org/en/) projects.
+> Do you like to count?
 
 ## Introduction
 
-This is a template for [Node.js](https://nodejs.org/en/) projects written in [TypeScript](https://www.typescriptlang.org/).
+[Myriad][myriad] is a Discord bot for managing counting channels. It removes incorrect counts and tracks each user's contribution.
 
-It includes [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/) configuration, as well as [husky](https://typicode.github.io/husky/#/) for managing git hooks.
-
-It enforces [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) with [commitlint](https://commitlint.js.org/#/).
-
-Finally, the template includes a [Dockerfile](Dockerfile) for building a container.
+This project was formerly known as CountBot.
 
 ## Usage
 
-Run the app with [nodemon](https://nodemon.io/).
+Run Myriad with [nodemon](https://nodemon.io/).
 
 ```sh
 npm start
 ```
 
-Start the app in production mode.
+Run Myriad in production mode.
 
 ```sh
 npm run prod
 ```
 
-Lint the project.
+Lint Myriad's source.
 
 ```sh
 npm run lint
 ```
 
-Use [Commitizen](http://commitizen.github.io/cz-cli/) to generate your commit message.
+Generate your commit message with [Commitizen](http://commitizen.github.io/cz-cli/).
 
 ```sh
 npm run commit
@@ -43,9 +39,11 @@ npm run commit
 Build the [Docker](https://www.docker.com/) image.
 
 ```sh
-docker build . -t ja1den/node-template
+docker build . -t ja1den/myriad
 ```
 
 ## License
 
 [MIT](LICENSE)
+
+[myriad]: https://discord.com/oauth2/authorize?client_id=548814470600720384&permissions=268790848&scope=bot

@@ -1,14 +1,14 @@
 {
-	"name": "node-template",
+	"name": "myriad",
 	"version": "1.0.0",
 	"private": true,
-	"homepage": "https://github.com/ja1den/node-template#readme",
+	"homepage": "https://github.com/ja1den/myriad#readme",
 	"bugs": {
-		"url": "https://github.com/ja1den/node-template/issues"
+		"url": "https://github.com/ja1den/myriad/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/ja1den/node-template.git"
+		"url": "git+https://github.com/ja1den/myriad.git"
 	},
 	"license": "MIT",
 	"author": "Jaiden Douglas",
