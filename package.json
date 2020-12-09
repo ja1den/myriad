@@ -16,7 +16,7 @@
 		"commit": "cz",
 		"postinstall": "husky install",
 		"lint": "sort-package-json && prettier -wu \"*\" && eslint \"**/*.ts\" --fix",
-		"prod": "ts-node src/index.ts",
+		"prod": "ts-node -r dotenv/config src/index.ts",
 		"start": "nodemon"
 	},
 	"commitlint": {
@@ -28,6 +28,11 @@
 		"*": "prettier -wu",
 		"*.ts": "eslint --fix",
 		"package.json": "sort-package-json"
+	},
+	"dependencies": {
+		"colors": "^1.4.0",
+		"discord.js": "^12.5.1",
+		"dotenv": "^8.2.0"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^11.0.0",
