@@ -5,6 +5,7 @@
 	"ext": "*.ts",
 
 	"exec": "ts-node -r dotenv/config src/index.ts",
+	"delay": 500,
 
 	"quiet": true
 }
