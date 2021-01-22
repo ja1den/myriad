@@ -1,11 +1,27 @@
-FROM node:12-alpine
+# Build
 
-WORKDIR /usr/src/app
+FROM node:latest
 
-COPY . .
+WORKDIR /app
+
+COPY package*.json ./
 
 RUN npm install
 
-# EXPOSE 3000
+COPY . .
 
-CMD npm run prod
+RUN npm run build
+
+# Production
+
+FROM node:alpine
+
+WORKDIR /app
+
+COPY package*.json ./
+
+COPY --from=0 /app/build ./build
+
+RUN npm install --production
+
+CMD ["npm", "start"]
