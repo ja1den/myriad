@@ -18,13 +18,7 @@ Run Myriad with [nodemon](https://nodemon.io/).
 npm start
 ```
 
-Run Myriad in production mode.
-
-```sh
-npm run prod
-```
-
-Lint Myriad's source.
+Lint the source.
 
 ```sh
 npm run lint
@@ -36,10 +30,10 @@ Generate your commit message with [Commitizen](http://commitizen.github.io/cz-cl
 npm run commit
 ```
 
-Build the [Docker](https://www.docker.com/) image.
+Build the [Docker](https://www.docker.com/) image for deployment.
 
 ```sh
-docker build . -t ja1den/myriad
+docker build . -t myriad
 ```
 
 ## License
