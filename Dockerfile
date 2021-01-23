@@ -24,4 +24,4 @@ COPY --from=0 /app/build ./build
 
 RUN npm install --production
 
-CMD ["npm", "start"]
+CMD ["node", "."]
