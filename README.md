@@ -10,7 +10,7 @@
 
 This project was formerly known as CountBot.
 
-## Usage
+## Development
 
 Run Myriad with [nodemon](https://nodemon.io/).
 
@@ -30,10 +30,22 @@ Generate your commit message with [Commitizen](http://commitizen.github.io/cz-cl
 npm run commit
 ```
 
-Build the [Docker](https://www.docker.com/) image for deployment.
+# Deployment
+
+Build the [Docker](https://www.docker.com/) image.
 
 ```sh
 docker build . -t myriad
+```
+
+Deploy the bot with the image.
+
+```sh
+docker run --name myriad \
+	--env TOKEN=1234 \
+	--env DB_HOST=example.com \
+	--env DB_PORT=25565
+	myriad
 ```
 
 ## License
